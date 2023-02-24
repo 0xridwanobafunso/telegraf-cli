@@ -1,0 +1,52 @@
+{
+  "name": "telegraf-cli",
+  "version": "1.0.0",
+  "description": "Telegraf-CLI is a command-line interface tool designed to simplify the development process for developers who are working with the Telegraf library.",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "",
+    "build": "tsc && cpy boilerplates/ ../dist/ --cwd=src"
+  },
+  "bin": {
+    "telegraf-cli": "dist/index.js",
+    "tcli": "dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0xridwanobafunso/telegraf-cli.git"
+  },
+  "keywords": [
+    "telegraf",
+    "cli",
+    "telegraf-cli",
+    "telegram",
+    "bot",
+    "boilerplate",
+    "telegraf-boilerplate"
+  ],
+  "author": "Obafunso Ridwan Adebayo <obafunsoadebayo17@gmail.com> (https://ridwanobafunso.xyz/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/0xridwanobafunso/telegraf-cli/issues"
+  },
+  "homepage": "https://github.com/0xridwanobafunso/telegraf-cli#readme",
+  "devDependencies": {
+    "@types/listr": "^0.14.4",
+    "cpy-cli": "^4.2.0",
+    "ts-node": "^10.9.1"
+  },
+  "dependencies": {
+    "@types/colors": "^1.2.1",
+    "@types/inquirer": "^9.0.3",
+    "arg": "^5.0.2",
+    "colors": "^1.4.0",
+    "inquirer": "^8.2.5",
+    "listr": "^0.14.3",
+    "pkg-install": "^1.0.0"
+  }
+}

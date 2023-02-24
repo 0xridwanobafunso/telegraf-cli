@@ -1,0 +1,14 @@
+const { channel, group, user } = require('../actions/{_cmd}')
+
+exports.{_cmd} = (bot) => {
+  return bot.command('{_cmd}', async (ctx) => {
+    // channel action
+    await channel(ctx)
+
+    // group action
+    await group(ctx)
+
+    // user action
+    await user(ctx)
+  })
+}

@@ -1,0 +1,21 @@
+{
+  "name": "telegraf-cli-with-koa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:bot": "node dev-bot.js",
+    "prod:bot": "node prod-bot.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.3",
+    "koa": "^2.14.1",
+    "koa-body": "^6.0.1",
+    "telegraf": "^4.11.2"
+  }
+}
