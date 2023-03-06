@@ -3,7 +3,7 @@
 Telegraf CLI welcomes contributors! This guide should help you submit issues and pull requests.
 
 Got a question, problem, or feature request?
-The documentation([README.md](https://github.com/0xridwanobafunso/telegraf-cli)) are good places to start.
+The [documentations](https://www.ridwanobafunso.xyz/oss/telegraf-cli/docs) are good places to start.
 
 Feel free to add an issue if those don't help!
 

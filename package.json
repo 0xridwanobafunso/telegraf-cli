@@ -1,6 +1,6 @@
 {
   "name": "telegraf-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Telegraf-CLI is a command-line interface tool designed to simplify the development process for developers who are working with the Telegraf library.",
   "files": [
     "dist"
@@ -9,7 +9,6 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "",
     "build": "tsc && cpy boilerplates/ ../dist/ --cwd=src"
   },
   "bin": {
@@ -41,7 +40,6 @@
     "ts-node": "^10.9.1"
   },
   "dependencies": {
-    "@types/colors": "^1.2.1",
     "@types/inquirer": "^9.0.3",
     "arg": "^5.0.2",
     "colors": "^1.4.0",

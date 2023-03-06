@@ -55,23 +55,9 @@ $ npm run dev:bot
 $ npm run prod:bot
 ```
 
-## Deployment
-
-### AWS (using NGINX)
-
-Coming soon...
-
-### Digital Ocean (using NGINX)
-
-Coming soon...
-
-### GLITCH.COM
-
-Coming soon...
-
 ## Learn More
 
-You can learn more in the [Telegraf-CLI](https://github.com/0xridwanobafunso/telegraf-cli) documentation.
+You can learn more in the [Telegraf-CLI](https://ridwanobafunso.xyz/oss/telegraf-cli/docs) documentation.
 
 To learn Telegraf, check out the [Telegraf](https://telegraf.js.org/) documentation.
 

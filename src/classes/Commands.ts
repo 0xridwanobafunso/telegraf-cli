@@ -113,10 +113,9 @@ export class Commands {
     Console.updatingMsg()
 
     // questions to prompt
-    const runUpdate = await Helpers.promptsForUpdateCMD()
+    const update = await Helpers.promptsForUpdateCMD()
 
     // update here
-    if (runUpdate) {
-    }
+    if (update) await Helpers.runUpdateTelegrafCLITasks()
   }
 }

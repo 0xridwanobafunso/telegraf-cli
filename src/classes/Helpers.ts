@@ -234,7 +234,10 @@ export class Helpers {
    * @param options
    * @param botName
    */
-  static async runTasks(options: IAnswersForNewCMD, botName: string) {
+  static async runTasks(
+    options: IAnswersForNewCMD,
+    botName: string
+  ): Promise<void> {
     // tasks
     let _tasks = [
       {
@@ -265,6 +268,40 @@ export class Helpers {
 
     // create new listr object
     const tasks = new Listr(_tasks)
+
+    // run task
+    await tasks.run()
+  }
+
+  /**
+   * @method updateTelegrafCLI
+   * @description
+   * @returns {Promise<void>}
+   */
+  static async updateTelegrafCLI(): Promise<void> {
+    let execFile = promisify(childProcess.execFile)
+
+    // execute
+    await execFile(
+      /^win/.test(process.platform) ? 'npm.cmd' : 'npm',
+      ['install', 'telegraf-cli@latest', '-g'],
+      {}
+    )
+  }
+
+  /**
+   * @method runTasks
+   * @description
+   * @returns {Promise<void>}
+   */
+  static async runUpdateTelegrafCLITasks(): Promise<void> {
+    // create new listr object
+    const tasks = new Listr([
+      {
+        title: '#1 Run update (npm install telegraf-cli@latest -g)',
+        task: async () => await Helpers.updateTelegrafCLI(),
+      },
+    ])
 
     // run task
     await tasks.run()
